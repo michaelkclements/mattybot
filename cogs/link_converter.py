@@ -46,12 +46,6 @@ class LinkConverter(commands.Cog):
         if converted is None:
             return
 
-        # Suppress the original x.com embed(s) so we don't get both
-        try:
-            await message.edit(suppress=True)
-        except (discord.Forbidden, discord.HTTPException):
-            pass  # we don't have manage_messages — skip silently
-
         await message.reply(converted, mention_author=False)
         logger.info(
             "LinkConverter: rewrote x.com link(s) in message %d from %s",
