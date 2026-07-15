@@ -14,14 +14,14 @@ CHANNEL_ID: int = 0  # overridden by .env
 
 # ── Activity detection ─────────────────────────────────────────────────────
 # Number of seconds to look back when counting message activity.
-MESSAGE_WINDOW: int = 600  # 10 minutes
+MESSAGE_WINDOW: int = 1200  # 20 minutes
 
 # Messages within MESSAGE_WINDOW needed to be considered "busy".
 BUSY_THRESHOLD: int = 10
 
 # When busy, probability (0–1) of posting a quote after each message.
 # 0.05 = roughly 1 quote per 20 messages.
-BUSY_QUOTE_CHANCE: float = 0.0025
+BUSY_QUOTE_CHANCE: float = 0.05
 
 # ── Quotes ──────────────────────────────────────────────────────────────
 # Add Matty's quotes here.
