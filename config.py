@@ -29,7 +29,8 @@ BUSY_QUOTE_CHANCE: float = 0.0025
 # STANDALONE_QUOTES are used for quiet fallback posts.
 # Both lists can be the same — just copy your quotes into each.
 REPLY_QUOTES: list[str] = [
-    # Add Matty's quotes here
+    "eeeee",
+    "Eee man",
 ]
 
 STANDALONE_QUOTES: list[str] = REPLY_QUOTES
