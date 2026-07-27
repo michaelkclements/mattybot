@@ -20,7 +20,7 @@ MESSAGE_WINDOW: int = 1200  # 20 minutes
 BUSY_THRESHOLD: int = 10
 
 # When busy, probability (0–1) of posting a quote after each message.
-# 0.05 = roughly 1 quote per 20 messages.
+# 0.0025 = roughly 1 quote per 400 messages.
 BUSY_QUOTE_CHANCE: float = 0.0025
 
 # ── Quotes ──────────────────────────────────────────────────────────────
