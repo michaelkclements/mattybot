@@ -21,7 +21,7 @@ BUSY_THRESHOLD: int = 10
 
 # When busy, probability (0–1) of posting a quote after each message.
 # 0.05 = roughly 1 quote per 20 messages.
-BUSY_QUOTE_CHANCE: float = 0.05
+BUSY_QUOTE_CHANCE: float = 0.0025
 
 # ── Quotes ──────────────────────────────────────────────────────────────
 # Add Matty's quotes here.
