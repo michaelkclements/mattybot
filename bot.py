@@ -1,5 +1,5 @@
 """
-MattyBot — scheduled quote poster + link converter.
+MattyBot — scheduled quote poster.
 
 Start with: python bot.py
 

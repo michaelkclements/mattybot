@@ -34,10 +34,3 @@ REPLY_QUOTES: list[str] = [
 ]
 
 STANDALONE_QUOTES: list[str] = REPLY_QUOTES
-
-# ── Link conversion ────────────────────────────────────────────────────────
-# Domains to rewrite when spotted in messages.
-# Maps source domain → replacement domain.
-LINK_REWRITES: dict[str, str] = {
-    "x.com": "xcancel.com",
-}
