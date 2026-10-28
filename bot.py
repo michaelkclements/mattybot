@@ -55,8 +55,14 @@ class MattyBot(commands.Bot):
             guild = discord.Object(id=int(_GUILD_ID))
             self.tree.copy_global_to(guild=guild)
             await self.tree.sync(guild=guild)
+            # Guild and global registrations are independent. Remove the old
+            # global copies only after the guild commands are safely synced.
+            self.tree.clear_commands(guild=None)
+            await self.tree.sync()
+            logger.info("Synced commands to guild %s and removed global copies", _GUILD_ID)
         else:
             await self.tree.sync()
+            logger.info("Synced global slash commands")
 
     async def on_ready(self) -> None:
         assert self.user is not None
